@@ -1,3 +1,55 @@
 @import "base/main";
 //$res: "/erjimulu/images/"; // 打包时用此路径
 $res: "/images/"; // 本地开发是用此路径
+.top_nanner{
+  width: 100%;
+  height: rem(360);
+  object-fit: cover;
+}
+.card_box{
+  min-height: 70vh;
+  padding: 0 rem(80);
+  background: url($res + 'bg.jpeg') 0 0 no-repeat;
+  background-size: cover;
+    font-size: rem(20);
+}
+.card{
+  position: relative;
+  top:rem(-90);
+  position: relative;
+  span{
+    color: #f0a3b3;
+  }
+}
+.blank{
+  height: rem(20);
+}
+.card .am-card-body{
+  font-size: rem(28);
+  color: #666;
+}
+.text_num{
+  font-size: 12px;
+  margin-top: rem(30);
+  margin-bottom: rem(30);
+}
+.card .btn{
+  position: absolute!important;
+  bottom: rem(30);
+  margin-left: rem(30);
+  background-color: pink;
+  border-radius: rem(30);
+  border: none;
+  color: #fff;
+  span{
+    color: #fff;
+  }
+}
+.html:not([data-scale]) .am-button-ghost::before{
+  border: none
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx){
+  html:not([data-scale]) .am-button-ghost::before {
+      border: none!important;
+  }
+}
